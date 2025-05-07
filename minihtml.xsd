@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <!-- Elementos de texto simple -->
+  <xs:element name="h1" type="xs:string"/>
+  <xs:element name="p" type="xs:string"/>
+  <xs:element name="b" type="xs:string"/>
+  <xs:element name="i" type="xs:string"/>
+  <xs:element name="li" type="xs:string"/>
+  <xs:element name="pre" type="xs:string"/>
+
+  <!-- Enlace con atributo href -->
+  <xs:element name="a">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:string">
+          <xs:attribute name="href" type="xs:anyURI" use="required"/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- Imagen con atributos -->
+  <xs:element name="img">
+    <xs:complexType>
+      <xs:attribute name="src" type="xs:anyURI" use="required"/>
+      <xs:attribute name="alt" type="xs:string" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- Lista desordenada -->
+  <xs:element name="ul">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="li" minOccurs="1" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- Lista ordenada -->
+  <xs:element name="ol">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="li" minOccurs="1" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- Línea horizontal (vacía) -->
+  <xs:element name="hr">
+    <xs:complexType/>
+  </xs:element>
+
+  <!-- Documento raíz opcional -->
+  <xs:element name="minihtml">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element ref="h1"/>
+          <xs:element ref="p"/>
+          <xs:element ref="b"/>
+          <xs:element ref="i"/>
+          <xs:element ref="a"/>
+          <xs:element ref="img"/>
+          <xs:element ref="ul"/>
+          <xs:element ref="ol"/>
+          <xs:element ref="li"/>
+          <xs:element ref="hr"/>
+          <xs:element ref="pre"/>
+        </xs:choice>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>
+
