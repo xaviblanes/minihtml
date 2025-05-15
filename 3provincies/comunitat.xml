@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="presentacio.xsl"?>
 
-<Comunitat Valenciana>
+<Comunitat_Valenciana>
     <província>
         <nom>Alacant</nom>
         <superfície>5816</superfície>
@@ -19,4 +19,4 @@
         <superfície>10841</superfície>
         <població>2710808</població>
     </província>    
-</Comunitat Valenciana>
+</Comunitat_Valenciana>
