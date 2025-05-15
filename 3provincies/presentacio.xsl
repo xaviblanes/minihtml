@@ -11,7 +11,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     <p><b>Nom: </b></p><xsl:value-of select="nom"/>
     <p><i>Població: </i></p><xsl:value-of select="poblacio"/>
     <p><i>Superfície: </i></p><xsl:value-of select="superficie"/>
-    <hr>
+    ---------------------------------------------------------------
   </xsl:for-each>
   </body>
   </html>
