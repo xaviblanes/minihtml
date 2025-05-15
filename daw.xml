@@ -42,15 +42,6 @@
     </mòdul>
 
     <mòdul>
-        <codi></codi>
-        <nom></nom>
-        <hores></hores>
-        <curs></curs>
-    </mòdul>
-
-
-
-    <mòdul>
         <codi>0373</codi>
         <nom>Llenguatges de Marques i Sistemes de Gestió d’Informació</nom>
         <hores>100</hores>
