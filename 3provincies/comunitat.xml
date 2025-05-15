@@ -4,19 +4,19 @@
 <Comunitat_Valenciana>
     <provincia>
         <nom>Alacant</nom>
-        <superficie>5816</superfície>
-        <poblacio>1991259</població>
+        <superficie>5816</superficie>
+        <poblacio>1991259</poblacio>
     </provincia>
 
     <provincia>
         <nom>Castelló</nom>
-        <superficie>6632</superfície>
-        <poblacio>615849</població>
+        <superficie>6632</superficie>
+        <poblacio>615849</poblacio>
     </provincia>
     
     <provincia>
         <nom>València</nom>
-        <superficie>10841</superfície>
-        <poblacio>2710808</població>
+        <superficie>10841</superficie>
+        <poblacio>2710808</poblacio>
     </provincia>    
 </Comunitat_Valenciana>
