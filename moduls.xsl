@@ -6,23 +6,18 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 <body>
   <h2>My CD Collection</h2>
   <table border="1">
-    <tr bgcolor="#9acd32">
-      <th>Title</th>
-      <th>Artist</th>
+    <tr bgcolor="#1acd32">
+      <th>Codi</th>
+      <th>Nom</th>
+      <th>Hores</th>
+      <th>Curs</th>
     </tr>
-    <xsl:for-each select="catalog/cd">
+    <xsl:for-each select="moduls/modul">
     <tr>
-      <td><xsl:value-of select="title"/></td>
-      <xsl:choose>
-      <xsl:when test="price > 10">
-         <td bgcolor="#ff00ff">
-         <xsl:value-of select="artist"/>
-         </td>
-      </xsl:when>
-      <xsl:otherwise>
-         <td><xsl:value-of select="artist"/></td>
-      </xsl:otherwise>
-      </xsl:choose>
+      <td><xsl:value-of select="codi"/></td>
+      <td><xsl:value-of select="nom"/></td>
+      <td><xsl:value-of select="hores"/></td>
+      <td><xsl:value-of select="curs"/></td>
     </tr>
     </xsl:for-each>
   </table>
