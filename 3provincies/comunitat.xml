@@ -2,21 +2,21 @@
 <?xml-stylesheet type="text/xsl" href="presentacio.xsl"?>
 
 <Comunitat_Valenciana>
-    <província>
+    <provincia>
         <nom>Alacant</nom>
-        <superfície>5816</superfície>
-        <població>1991259</població>
-    </província>
+        <superficie>5816</superfície>
+        <poblacio>1991259</població>
+    </provincia>
 
-    <província>
+    <provincia>
         <nom>Castelló</nom>
-        <superfície>6632</superfície>
-        <població>615849</població>
-    </província>
+        <superficie>6632</superfície>
+        <poblacio>615849</població>
+    </provincia>
     
-    <província>
+    <provincia>
         <nom>València</nom>
-        <superfície>10841</superfície>
-        <població>2710808</població>
-    </província>    
+        <superficie>10841</superfície>
+        <poblacio>2710808</població>
+    </provincia>    
 </Comunitat_Valenciana>
